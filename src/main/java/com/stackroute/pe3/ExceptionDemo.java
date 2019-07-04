@@ -4,7 +4,9 @@ public class ExceptionDemo {
     public String exceptionThrow() {
         String result = "";
         try {
-            throw new Exception("Exception thrown");
+            int x = 0;
+            int y = 5/x;
+            //throw new Exception("Exception thrown");
         }
         catch (Exception e){
             result += "Caught the exception with message: "+e.getMessage();
